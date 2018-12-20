@@ -9,15 +9,6 @@ from netfilter.rule import Rule,Match,Target
 import netfilter.table
 from netfilter.table import Table
 
-#-----------------------------------------------------------------------------------------------------------------------------------
-# *Im folgenden Code finden Sie einen Firewall bzw. Netfilter, der den Traffic überwacht 
-# *und unerwünschte Inhalte sowie Zugriffe automatisch Blockiert.
-# *Starten kann man es indem man './netfilter.py start' in den Terminal eingibt. 
-# *Abschalten mit './netfilter.py stop und neustarten mit './netfilter.py restart' 
-# !Zu benutzung sind Module wie 'python-netfilter' und 'netfilter' erforderlich
-# !Leider wurde netfilter aus dem Python Module Repository entfernt und ist somit nicht mehr funkstionsfähig :'(
-#-----------------------------------------------------------------------------------------------------------------------------------
-
 class Firewall:
     def __init__(self, auto_commit = True, ipv6 = False):
         self.filter = netfilter.table.Table(
