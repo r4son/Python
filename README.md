@@ -9,4 +9,6 @@ Feel free to use or review them. You can suggest any changes, contributions are 
 - GUI Development (tkinter)
 - Neural Networks (Machine Learning, Deep Learning, CNN, RNN)
 
-(git status)
+```
+git status
+```
